@@ -6,17 +6,25 @@ Using [express](http://expressjs.com/), [mongoose](https://mongoosejs.com/)
 1. `npm install` 
 2. `node index`
 
-Routes
-GET
-POST
-http://localhost:3030/todo/new
+## Routes
+
+### GET
+
+http://localhost:3030/todos/
+
+### POST
+
+http://localhost:3030/todos/
+```
     {
         "title":"test #2",
         "completed":true
     }
-DELETE
-http://localhost:3030/todo/remove
-    {
-        "id":"606a04cdd99453391cb12d60"
-    }
-UPDATE
+```    
+### DELETE
+
+http://localhost:3030/todos/:id
+
+### PUT
+
+http://localhost:3030/todos/:id
